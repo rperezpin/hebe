@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">    
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hebe González, psicóloga sanitaria especializada en terapia individual y online, enfocada en la Terapia Gestalt. Descubre cómo te puedo ayudar a mejorar tu bienestar emocional.">
+    <meta name="keywords" content="Psicología, Terapia Gestalt, Psicóloga Sanitaria, Terapia individual, Terapia online, Ansiedad, Depresión">
+    <meta name="author" content="Hebe González">
+    <title>Hebe González - Psicóloga Sanitaria</title>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--JS-->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+    <style>        
+        /* Estilo básico */
+        html {
+            scroll-behavior: smooth;
+        }
+        .nav a {
+            color: #5b5b5b;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            color: #ffb354;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        /* Efectos hover para botones */
+        .btn {
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #ffb354;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* Estilos adicionales de fondo */
+        .bg-light {
+            background-color: #f8f9fa;
+        }
+
+        /* Efectos dinámicos en imágenes */
+        .img-hover img {
+            transition: all 0.5s ease;
+        }
+        .img-hover img:hover {
+            opacity: 0.8;
+            /*transform: scale(1.05);*/
+        }
+
+        /* Estilos animados al hacer scroll */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Espaciado y estilo de fondo con imágenes */
+        .parallax {
+            background-size: cover;
+            background-attachment: fixed;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .parallax-bg1 {
+            background-image: url('img/picture1.jpg');
+        }
+
+        .parallax-bg2 {
+            background-image: url('img/picture2.jpg');
+        }
+
+        .parallax-bg3 {
+            background-image: url('img/picture3.jpg');
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: #ffb354;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            background-color: #f0f0f0;
+            padding: 50px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="section" id="inicio">
+        <div class="container">
+            <div class="navbar navbar-expand-lg navbar-light">
+                <h1 class="brand"><a href="#inicio"><img src="img/HEBE-removebg-preview.png" alt="Logo Hebe González Psicóloga"></a></h1>
+                
+            </div>
+        </div>
+    </header>
+    <section id="menu">
+    <div class="container">
+        <div class="row">
+            <article class="span12">
+                <div class="navbar navbar_ clearfix">
+                    <div class="navbar-inner">      
+                        <div class="clearfix">
+                            <div class="nav-collapse nav-collapse_">
+                                <ul class="nav sf-menu clearfix">
+                                    <li><a href="#inicio">01.<br>Inicio</a></li>
+                                    <li><a href="#sobremi">02.<br>Sobre mi</a></li>
+                                    <li><a href="#terapia">03.<br>Terapia</a></li>
+                                    <li><a href="#recursos">04.<br>Recursos</a></li>
+                                    <li><a href="#contacto">05.<br>Contacto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Bienvenida -->
+    <section class="section fade-in" id="inicio">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="grid-container">
+          <div class="grid-item">
+            <h2>Bienvenida</h2>
+            <p>Soy Hebe González, psicóloga sanitaria especializada en terapia individual para adultos, tanto en modalidad presencial como online. Con años de experiencia en el campo, mi enfoque principal es la Terapia Gestalt. Te ofrezco un espacio seguro y profesional para ayudarte a explorar tus emociones y potenciar tu crecimiento personal.</p>
+          </div>
+          <div class="grid-item">
+            <img src="img/HEBE.png" alt="Tu imagen" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Sección parallax 1 -->
+    <div class="parallax parallax-bg1">
+        "Explora el poder de la Terapia Gestalt"
+    </div>
+
+    <!-- Sección Sobre mí -->
+    <section class="section bg-light fade-in" id="sobremi">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Me he formado en diferentes enfoques terapéuticos y cuento con una sólida trayectoria en la atención psicológica. Mi objetivo es proporcionar un acompañamiento personalizado, adaptado a las necesidades de cada persona.</p>
+                    <p><strong>Formación:</strong>Graduada en Psicología, con especialización en Psicología Sanitaria y formación avanzada en Terapia Gestalt.</p>
+                </div>
+                <div class="col-md-6 img-hover">
+                    <img src="img/page1_pic1.jpg" alt="Hebe González Psicóloga" style="width:100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección parallax 2 -->
+    <div class="parallax parallax-bg2">
+        "Terapias online y presenciales"
+    </div>
+
+    <!-- Sección Terapia -->
+    <section class="section fade-in" id="terapia">
+        <div class="container">
+            <h2>En qué te puedo ayudar</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Ofrezco acompañamiento psicológico en las siguientes áreas:</p>
+                    <ul>
+                        <li>Ansiedad y estrés</li>
+                        <li>Depresión</li>
+                        <li>Problemas de autoestima</li>
+                        <li>Conflictos emocionales</li>
+                        <li>Crecimiento personal</li>
+                        <li>Duelo y pérdidas</li>
+                        <li>Terapia online</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 img-hover">
+                    <img src="img/page1_pic2.jpg" alt="Terapia Gestalt" style="width:100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección parallax 3 -->
+    <div class="parallax parallax-bg3">
+        "Fortalece tu bienestar emocional"
+    </div>
+
+    <!-- Sección Recursos -->
+    <section class="section bg-light fade-in" id="recursos">
+        <div class="container">
+            <h2>Recursos y artículos</h2>
+            <p>Encuentra recursos útiles sobre salud mental y emocional en mi blog. Aquí te comparto artículos, herramientas y recomendaciones para que puedas aplicar en tu vida cotidiana.</p>
+            <a href="#" class="btn btn-link">Leer más en el Blog</a>
+        </div>
+    </section>
+
+    <!-- Sección Testimonios -->
+    <section class="section fade-in">
+        <div class="container">
+            <h2>Testimonios</h2>
+            <blockquote>
+                <p>"La terapia con Hebe me ha permitido conocerme mejor y gestionar mi ansiedad de manera mucho más efectiva. Recomiendo su enfoque Gestalt a cualquiera que esté buscando apoyo psicológico."</p>
+                <footer>- Testimonio de un paciente</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section class="section fade-in" id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Puedes ponerte en contacto conmigo a través del siguiente formulario o por las redes sociales. Estoy disponible para consultas presenciales y online.</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Hebe González &copy; 2024 | <a href="#politica">Política de Privacidad</a></p>
+        </div>
+    </footer>
+
+    <!-- JS para navegación suave y animaciones -->
+    <script>
+        // Scroll suave en navegación
+        document.querySelectorAll('.nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animaciones al hacer scroll
+        const faders = document.querySelectorAll('.fade-in');
+        const appearOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('visible');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+        
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+</body>
+</html>
