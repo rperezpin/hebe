@@ -128,6 +128,67 @@
             grid-template-columns: 1fr 1fr;
             grid-gap: 20px;
         }
+        /* Estilo para las cajas */
+        .terapia-boxes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+            gap: 20px; /* Espacio entre cajas */
+        }
+        .terapia-boxes::before {
+            content: none !important;
+        }
+
+
+        .terapia-boxes .box {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .terapia-boxes .box:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Estilo para los detalles (summary) */
+        .terapia-boxes details summary {
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px 0;
+        }
+
+        /* Estilo para los párrafos dentro de los detalles */
+        .terapia-boxes details p {
+            margin-top: 10px;
+            font-size: 1em;
+        }
+
+        /* Ajuste para evitar borde en el summary */
+        .terapia-boxes details[open] summary {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        /* Media Queries para hacer la cuadrícula responsiva */
+
+        /* Si la pantalla es más pequeña (tablets), muestra solo 2 columnas */
+        @media (max-width: 992px) {
+            .terapia-boxes {
+                grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+            }
+        }
+
+        /* Si la pantalla es aún más pequeña (móviles), muestra solo 1 columna */
+        @media (max-width: 576px) {
+            .terapia-boxes {
+                grid-template-columns: 1fr; /* 1 columna */
+            }
+        }
+
+
         
     </style>
 </head>
@@ -192,17 +253,21 @@
     <!-- Sección Sobre mí -->
     <section class="section bg-light fade-in" id="sobremi">
         <div class="container">
-            <h2>Sobre mí</h2>
             <div class="row">
-                <div class="col-md-6">
-                    <p>Me he formado en diferentes enfoques terapéuticos y cuento con una sólida trayectoria en la atención psicológica. Mi objetivo es proporcionar un acompañamiento personalizado, adaptado a las necesidades de cada persona.</p>
-                    <p><strong>Formación:</strong>Graduada en Psicología, con especialización en Psicología Sanitaria y formación avanzada en Terapia Gestalt.</p>
-                </div>
-                <div class="col-md-6 img-hover">
-                    <img src="img/page1_pic1.jpg" alt="Hebe González Psicóloga" style="width:100%;">
-                </div>
+                <div class="col-md-12">
+                  <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="img/page1_pic1.jpg" alt="Hebe González Psicóloga" style="max-width: 100%; margin-top: 20px;">
+                        </div>
+                        <div class="grid-item ">
+                            <h2>Sobre mí</h2>
+                            <p>Me he formado en diferentes enfoques terapéuticos y cuento con una sólida trayectoria en la atención psicológica. Mi objetivo es proporcionar un acompañamiento personalizado, adaptado a las necesidades de cada persona.</p>
+                            <p><strong>Formación:</strong>Graduada en Psicología, con especialización en Psicología Sanitaria y formación avanzada en Terapia Gestalt.</p>
+                        </div>                
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Sección parallax 2 -->
@@ -211,28 +276,58 @@
     </div>
 
     <!-- Sección Terapia -->
-    <section class="section fade-in" id="terapia">
-        <div class="container">
-            <h2>En qué te puedo ayudar</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Ofrezco acompañamiento psicológico en las siguientes áreas:</p>
-                    <ul>
-                        <li>Ansiedad y estrés</li>
-                        <li>Depresión</li>
-                        <li>Problemas de autoestima</li>
-                        <li>Conflictos emocionales</li>
-                        <li>Crecimiento personal</li>
-                        <li>Duelo y pérdidas</li>
-                        <li>Terapia online</li>
-                    </ul>
+<section class="section fade-in" id="terapia">
+    <div class="container">
+        <h2>En qué te puedo ayudar</h2>
+        <p>Ofrezco acompañamiento psicológico en las siguientes áreas:</p>
+        <div class="row terapia-boxes" style="margin-top: 20px;">                
+                <div class="box">
+                    <details>
+                        <summary>Ansiedad y estrés</summary>
+                        <p>La ansiedad puede interferir en tu vida diaria. Te ayudaré a desarrollar habilidades para gestionarla.</p>
+                    </details>
                 </div>
-                <div class="col-md-6 img-hover">
-                    <img src="img/page1_pic2.jpg" alt="Terapia Gestalt" style="width:100%;">
+                <div class="box">
+                    <details>
+                        <summary>Depresión</summary>
+                        <p>Si sientes una tristeza profunda o falta de motivación, te acompañaré en el proceso de recuperación emocional.</p>
+                    </details>
                 </div>
-            </div>
+                <div class="box">
+                    <details>
+                        <summary>Problemas de autoestima</summary>
+                        <p>El trabajo en la autoestima es fundamental para mejorar tu relación contigo mismo.</p>
+                    </details>
+                </div>
+                <div class="box">
+                    <details>
+                        <summary>Conflictos emocionales</summary>
+                        <p>Te guiaré a través del entendimiento y resolución de conflictos emocionales internos y con otros.</p>
+                    </details>
+                </div>
+                <div class="box">
+                    <details>
+                        <summary>Crecimiento personal</summary>
+                        <p>La Terapia Gestalt puede ayudarte a alcanzar tu máximo potencial y conocerte mejor.</p>
+                    </details>
+                </div>
+                <div class="box">
+                    <details>
+                        <summary>Duelo y pérdidas</summary>
+                        <p>Te acompaño en el proceso de duelo, ofreciéndote un espacio para procesar tus emociones.</p>
+                    </details>
+                </div>
+                <div class="box">
+                    <details>
+                        <summary>Terapia online</summary>
+                        <p>Ofrezco sesiones de terapia online, adaptadas a tu disponibilidad y necesidades.</p>
+                    </details>
+                </div>
         </div>
-    </section>
+    </div>
+</section>
+
+    
 
     <!-- Sección parallax 3 -->
     <div class="parallax parallax-bg3">
