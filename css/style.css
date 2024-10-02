@@ -215,6 +215,10 @@ header p {
   display: block;
 }
 .navbar_ .navbar-inner {
+  display: flex;
+  justify-content: center; /* Alinea los elementos al centro */
+  margin: 0;
+  padding: 0;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -232,11 +236,11 @@ header p {
   position: relative;
   display: inline-block;
   margin: 0;
-  padding: 36px 0 42px 0;
-  padding-top: 36px;
+  padding: 0 0 0 0;
+  padding-top: 0;
   text-align: center;
   text-transform: uppercase;
-  width: 188px;
+  width: 130px;
   background: url(../img/menu_border.png) right top no-repeat;
   zoom: 1;
 }
@@ -581,7 +585,10 @@ footer article a:hover {
 /*-------------------------------------------------------media queries----------------------------------------------------------*/
 @media (min-width: 1200px) {
   .nav-collapse_ {
-    display: block !important; /* Siempre visible */
+    display: flex;
+    justify-content: center; /* Alinea los elementos al centro */
+    margin: 0;
+    padding: 0;
   }
   .nav-collapse_ .nav li {
     width: 234px; /* Mantiene el ancho para los ítems del menú */
@@ -634,11 +641,16 @@ footer article a:hover {
     text-align: center;
   }
   .navbar_ .nav-collapse_ {
-    display: flex !important; /* Display as flexbox */
-    width: 100%;
+    display: flex;
+    justify-content: center; /* Alinea los elementos al centro */
+    margin: 0;
+    padding: 0;
   }
   .nav-collapse {
-    display: block !important; /* Prevent collapsing */
+    display: flex;
+    justify-content: center; /* Alinea los elementos al centro */
+    margin: 0;
+    padding: 0;
   }
   .nav-collapse ul {
     display: flex;
@@ -692,7 +704,10 @@ footer article a:hover {
     margin-bottom: 50px;
   }
   .navbar_ .nav-collapse_ {
-    width: 100%;
+    display: flex;
+    justify-content: center; /* Alinea los elementos al centro */
+    margin: 0;
+    padding: 0;
   }
   .box4 {
     width: 29%;
