@@ -10,184 +10,8 @@
     <title>Hebe González - Psicóloga Sanitaria</title>
     
     <!--CSS-->
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    
-    <style>        
-        /* Estilo básico */
-        html {
-            scroll-behavior: smooth;
-        }
-        .nav a {
-            color: #5b5b5b;
-            text-decoration: none;
-        }
-        .nav a:hover {
-            color: #ffb354;
-        }
-        .section {
-            padding: 60px 0;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .section {
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-        }
 
-        /* Efectos hover para botones */
-        .btn {
-            transition: all 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #ffb354;
-            color: #fff;
-            transform: scale(1.05);
-        }
-
-        /* Estilos adicionales de fondo */
-        .bg-light {
-            background-color: #f8f9fa;
-        }
-
-        /* Efectos dinámicos en imágenes */
-        .img-hover img {
-            transition: all 0.5s ease;
-        }
-        .img-hover img:hover {
-            opacity: 0.8;
-            /*transform: scale(1.05);*/
-        }
-
-        /* Estilos animados al hacer scroll */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Espaciado y estilo de fondo con imágenes */
-        .parallax {
-            background-size: cover;
-            background-attachment: fixed;
-            height: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            font-size: 2em;
-        }
-
-        .parallax-bg1 {
-            background-image: url('img/picture1.jpg');
-        }
-
-        .parallax-bg2 {
-            background-image: url('img/picture2.jpg');
-        }
-
-        .parallax-bg3 {
-            background-image: url('img/picture3.jpg');
-        }
-
-        /* Footer */
-        footer {
-            background-color: #343a40;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        footer a {
-            color: #ffb354;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        .section {
-            background-color: #f0f0f0;
-            padding: 50px;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 20px;
-        }
-        /* Estilo para las cajas */
-        .terapia-boxes {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr); /* 4 columnas */
-            gap: 20px; /* Espacio entre cajas */
-        }
-        .terapia-boxes::before {
-            content: none !important;
-        }
-
-
-        .terapia-boxes .box {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            transition: box-shadow 0.3s ease;
-        }
-
-        .terapia-boxes .box:hover {
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Estilo para los detalles (summary) */
-        .terapia-boxes details summary {
-            font-size: 1.2em;
-            font-weight: bold;
-            cursor: pointer;
-            padding: 10px 0;
-        }
-
-        /* Estilo para los párrafos dentro de los detalles */
-        .terapia-boxes details p {
-            margin-top: 10px;
-            font-size: 1em;
-        }
-
-        /* Ajuste para evitar borde en el summary */
-        .terapia-boxes details[open] summary {
-            border-bottom: 1px solid #ddd;
-            margin-bottom: 10px;
-        }
-        
-
-        /* Media Queries para hacer la cuadrícula responsiva */
-
-        /* Si la pantalla es más pequeña (tablets), muestra solo 2 columnas */
-        @media (max-width: 992px) {
-            .terapia-boxes {
-                grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-            }
-        }
-
-        /* Si la pantalla es aún más pequeña (móviles), muestra solo 1 columna */
-        @media (max-width: 576px) {
-            .terapia-boxes {
-                grid-template-columns: 1fr; /* 1 columna */
-            }
-        }
-
-
-        
-    </style>
 </head>
 <body>
     <!-- Header -->
@@ -207,11 +31,11 @@
                         <div class="clearfix">
                             <div class="nav-collapse nav-collapse_">
                                 <ul class="nav sf-menu clearfix">
-                                    <li><a href="#inicio">01.<br>Inicio</a></li>
-                                    <li><a href="#sobremi">02.<br>Sobre mi</a></li>
-                                    <li><a href="#terapia">03.<br>Terapia</a></li>
-                                    <li><a href="#recursos">04.<br>Recursos</a></li>
-                                    <li><a href="#contacto">05.<br>Contacto</a></li>
+                                    <li><a href="#inicio"><br>Inicio</a></li>
+                                    <li><a href="#sobremi"><br>Sobre mi</a></li>
+                                    <li><a href="#terapia"><br>Formación y orientación</a></li>
+                                    <li><a href="#recursos"><br>Recursos</a></li>
+                                    <li><a href="#contacto"><br>Contacto</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -246,7 +70,7 @@
     </div>
 
     <!-- Sección Sobre mí -->
-    <section class="section bg-light fade-in" id="sobremi">
+    <section class="section fade-in" id="sobremi">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -330,7 +154,7 @@
     </div>
 
     <!-- Sección Recursos -->
-    <section class="section bg-light fade-in" id="recursos">
+    <section class="section fade-in" id="recursos">
         <div class="container">
             <h2>Recursos y artículos</h2>
             <p>Encuentra recursos útiles sobre salud mental y emocional en mi blog. Aquí te comparto artículos, herramientas y recomendaciones para que puedas aplicar en tu vida cotidiana.</p>
