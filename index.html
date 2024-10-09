@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">    
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hebe González, psicóloga sanitaria especializada en terapia individual y online, enfocada en la Terapia Gestalt. Descubre cómo te puedo ayudar a mejorar tu bienestar emocional.">
     <meta name="keywords" content="Psicología, Terapia Gestalt, Psicóloga Sanitaria, Terapia individual, Terapia online, Ansiedad, Depresión">
@@ -14,8 +16,9 @@
 
 </head>
 <body>
+    <main>
     <!-- Header -->
-    <header class="section" id="inicio">
+    <header class="section-inicio" id="inicio">
         <div class="container">
             <div class="navbar navbar-expand-lg navbar-light">
                 <h1 class="brand"><a href="#inicio"><img src="img/HEBE-removebg-preview.png" alt="Logo Hebe González Psicóloga"></a></h1>
@@ -23,7 +26,7 @@
             </div>
         </div>
     </header>
-    <section id="menu">
+    <section class="section-menu fade-in" id="menu">
     <div class="container">
         <div class="row">
                 <div class="navbar navbar_ clearfix">
@@ -32,9 +35,8 @@
                             <div class="nav-collapse nav-collapse_">
                                 <ul class="nav sf-menu clearfix">
                                     <li><a href="#inicio"><br>Inicio</a></li>
-                                    <li><a href="#sobremi"><br>Sobre mi</a></li>
-                                    <li><a href="#terapia"><br>Formación y orientación</a></li>
-                                    <li><a href="#recursos"><br>Recursos</a></li>
+                                    <li><a href="#sobremi"><br>Sobre mi</a></li>                                    
+                                    <li><a href="#servicios"><br>Servicios</a></li>
                                     <li><a href="#contacto"><br>Contacto</a></li>
                                 </ul>
                             </div>
@@ -46,18 +48,18 @@
 </section>
 
     <!-- Sección Bienvenida -->
-    <section class="section fade-in" id="inicio">
+    <section class="section-bienvenida fade-in" id="inicio">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="grid-container">
           <div class="grid-item">
             <h2>Bienvenida</h2>
-            <p>Soy Hebe González, psicóloga sanitaria especializada en terapia individual para adultos, tanto en modalidad presencial como online. Con años de experiencia en el campo, mi enfoque principal es la Terapia Gestalt. Te ofrezco un espacio seguro y profesional para ayudarte a explorar tus emociones y potenciar tu crecimiento personal.</p>
+            <p class="justified-text">Soy Hebe González, psicóloga sanitaria especializada en terapia individual para adultos, tanto en modalidad presencial como online. Con años de experiencia en el campo, mi enfoque principal es la Terapia Gestalt. Te ofrezco un espacio seguro y profesional para ayudarte a explorar tus emociones y potenciar tu crecimiento personal.</p>
           </div>
           <div class="grid-item">
-            <img src="img/HEBE.png" alt="Tu imagen" class="img-fluid">
-          </div>
+            <img src="img\WhatsApp Image 2024-10-09 at 18.24.35.jpeg" alt="Hebe González Psicóloga" class="img-sobremi">
+                        </div>
         </div>
       </div>
     </div>
@@ -70,129 +72,77 @@
     </div>
 
     <!-- Sección Sobre mí -->
-    <section class="section fade-in" id="sobremi">
+    <section class="section-sobremi fade-in" id="sobremi">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                  <div class="grid-container">
-                    <div class="grid-item">
-                        <img src="img/page1_pic1.jpg" alt="Hebe González Psicóloga" style="max-width: 100%; display: flex; justify-content: center;">
-                        </div>
-                        <div class="grid-item ">
-                            <h2>Sobre mí</h2>
-                            <p>Me he formado en diferentes enfoques terapéuticos y cuento con una sólida trayectoria en la atención psicológica. Mi objetivo es proporcionar un acompañamiento personalizado, adaptado a las necesidades de cada persona.</p>
-                            <br><p><strong>Formación:</strong>Graduada en Psicología, con especialización en Psicología Sanitaria y formación avanzada en Terapia Gestalt.</p>
-                        </div>                
+            <h2>Sobre mí</h2>
+            <p class="justified-text">Me he formado en diferentes enfoques terapéuticos y cuento con una sólida trayectoria en la atención psicológica. Mi objetivo es proporcionar un acompañamiento personalizado, adaptado a las necesidades de cada persona.</p>
+                          
+            <div class="flex-container">
+                <div class="flex-item">
+                    <h3>Enfoque</h3>
+                    <p>Descripción breve sobre el enfoque terapéutico.</p>
+                </div>
+                <div class="flex-item">
+                    <h3>Formación</h3>
+                    <p>Descripción breve sobre la formación.</p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
+    
 
     <!-- Sección parallax 2 -->
     <div class="parallax parallax-bg2">
         "Terapias online y presenciales"
     </div>
+   
 
-    <!-- Sección Terapia -->
-<section class="section fade-in" id="terapia">
-    <div class="container">
-        <h2>En qué te puedo ayudar</h2>
-        <p>Ofrezco acompañamiento psicológico en las siguientes áreas:</p>
-        <div class="row terapia-boxes" style="margin-top: 20px;">                
-                <div class="box">
-                    <details>
-                        <summary>Ansiedad y estrés</summary>
-                        <p>La ansiedad puede interferir en tu vida diaria. Te ayudaré a desarrollar habilidades para gestionarla.</p>
-                    </details>
-                </div>
-                <div class="box">
-                    <details>
-                        <summary>Depresión</summary>
-                        <p>Si sientes una tristeza profunda o falta de motivación, te acompañaré en el proceso de recuperación emocional.</p>
-                    </details>
-                </div>
-                <div class="box">
-                    <details>
-                        <summary>Problemas de autoestima</summary>
-                        <p>El trabajo en la autoestima es fundamental para mejorar tu relación contigo mismo.</p>
-                    </details>
-                </div>
-                <div class="box">
-                    <details>
-                        <summary>Conflictos emocionales</summary>
-                        <p>Te guiaré a través del entendimiento y resolución de conflictos emocionales internos y con otros.</p>
-                    </details>
-                </div>
-                <div class="box">
-                    <details>
-                        <summary>Crecimiento personal</summary>
-                        <p>La Terapia Gestalt puede ayudarte a alcanzar tu máximo potencial y conocerte mejor.</p>
-                    </details>
-                </div>
-                <div class="box">
-                    <details>
-                        <summary>Duelo y pérdidas</summary>
-                        <p>Te acompaño en el proceso de duelo, ofreciéndote un espacio para procesar tus emociones.</p>
-                    </details>
-                </div>
-                <div class="box">
-                    <details>
-                        <summary>Terapia online</summary>
-                        <p>Ofrezco sesiones de terapia online, adaptadas a tu disponibilidad y necesidades.</p>
-                    </details>
-                </div>
-        </div>
-    </div>
-</section>
-
+    <!-- Sección Servicios -->
+    <section class="section-servicios fade-in" id="servicios">
+        <div class="container">
+            <h2>Servicios</h2>
+            <p class="justified-text">Encuentra recursos útiles sobre salud mental y emocional en mi blog. Aquí te comparto artículos, herramientas y recomendaciones para que puedas aplicar en tu vida cotidiana.</p>
     
-
+            <div class="flex-container">
+                <div class="flex-item">
+                    <i class="fas fa-laptop-house"></i> <!-- Icono para modalidad -->
+                    <h3>Modalidad de Terapia</h3>
+                    <p>Online y Presencial</p>
+                </div>
+                <div class="flex-item">
+                    <i class="fas fa-clock"></i> <!-- Icono para duración -->
+                    <h3>Duración de la Sesión</h3>
+                    <p>1 hora</p>
+                </div>
+                <div class="flex-item">
+                    <i class="fas fa-euro-sign"></i> <!-- Icono para precio -->
+                    <h3>Precio de la Consulta</h3>
+                    <p>60€</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Sección parallax 3 -->
     <div class="parallax parallax-bg3">
         "Fortalece tu bienestar emocional"
     </div>
 
-    <!-- Sección Recursos -->
-    <section class="section fade-in" id="recursos">
-        <div class="container">
-            <h2>Recursos y artículos</h2>
-            <p>Encuentra recursos útiles sobre salud mental y emocional en mi blog. Aquí te comparto artículos, herramientas y recomendaciones para que puedas aplicar en tu vida cotidiana.</p>
-            <a href="#" class="btn btn-link">Leer más en el Blog</a>
-        </div>
-    </section>
-
-    <!-- Sección Testimonios -->
-    <section class="section fade-in">
-        <div class="container">
-            <h2>Testimonios</h2>
-            <blockquote>
-                <p>"La terapia con Hebe me ha permitido conocerme mejor y gestionar mi ansiedad de manera mucho más efectiva. Recomiendo su enfoque Gestalt a cualquiera que esté buscando apoyo psicológico."</p>
-                <footer>- Testimonio de un paciente</footer>
-            </blockquote>
-        </div>
-    </section>
-
     <!-- Sección Contacto -->
-    <section class="section fade-in" id="contacto">
+    <section class="section-contacto fade-in" id="contacto">
         <div class="container">
             <h2>Contacto</h2>
-            <p>Puedes ponerte en contacto conmigo a través del siguiente formulario o por las redes sociales. Estoy disponible para consultas presenciales y online.</p>
-            <form>
-                <div class="form-group">
-                    <label for="name">Nombre</label>
-                    <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+            <p>Puedes ponerte en contacto conmigo para cualquier duda o consulta que te surja a través de los siguientes medios.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i> <!-- Icono de teléfono -->
+                    <span>+34 123 456 789</span>
                 </div>
-                <div class="form-group">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i> <!-- Icono de correo -->
+                    <span>email@example.com</span>
                 </div>
-                <div class="form-group">
-                    <label for="message">Mensaje</label>
-                    <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu mensaje"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+            </div>
         </div>
     </section>
 
@@ -236,5 +186,12 @@
             appearOnScroll.observe(fader);
         });
     </script>
+    
+</main>
+<!-- Botón de subir -->
+<a href="#inicio" class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
 </body>
 </html>

@@ -9,11 +9,17 @@ html {
 }
 
 body {
-  background: #f8f8f8 url(../img/pattern2.png) repeat;
+  background-color: #E8F0F2 ;
   font: 13px Tahoma, Arial, Helvetica, sans-serif;
-  color: #868686;
+  color: #a8a2a2;
   margin: 0;
   line-height: 20px;
+}
+main {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 5%;  
+  padding-right: 5%;
 }
 
 a {
@@ -156,6 +162,14 @@ h1.brand a img {
 .img-hover img:hover {
   opacity: 0.8;
 }
+.img-sobremi {
+  max-width: 100%;
+  width: 200px; /* Cambia este valor según necesites */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Asegura que el espacio extra sea eliminado */
+  margin: 0 auto; /* Centra la imagen */
+}
+
 
 /* Sección de Cuadrícula */
 .grid-container {
@@ -175,29 +189,81 @@ h1.brand a img {
   transform: translateY(0);
 }
 
+.justified-text {
+  text-align: justify; /* Justifica el texto */
+  margin: 0 0 20px;
+  padding: 0 10px; /* Añade espacio entre párrafos */
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+  justify-content: space-between; /* Espaciado entre los elementos */
+  margin-top: 20px; /* Espacio superior */
+}
+
+.flex-item {
+  flex: 1; /* Toma el mismo espacio disponible */
+  min-width: 250px; /* Ajusta según lo necesites */
+  margin: 10px; /* Espacio entre las divisiones */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+  padding: 20px; /* Espacio interno */
+  border-radius: 10px; /* Esquinas redondeadas */
+  text-align: center; /* Centra el texto */
+  background-color: #f9f9f9; /* Fondo suave */
+  transition: transform 0.3s; /* Efecto al pasar el mouse */
+}
+
+.flex-item:hover {
+  transform: translateY(-5px); /* Levanta la caja al pasar el mouse */
+}
+
+.flex-item i {
+  font-size: 2em; /* Tamaño del icono */
+  color: #007bff; /* Color del icono */
+  margin-bottom: 10px; /* Espacio debajo del icono */
+}
+
+h3 {
+  font-size: 1.5em; /* Tamaño de los encabezados */
+  margin: 10px 0; /* Espacio superior e inferior */
+}
+
+p {
+  font-size: 1.1em; /* Tamaño del texto */
+  color: #555; /* Color del texto */
+}
+
+@media (max-width: 600px) {
+  .flex-item {
+      flex: 100%; /* En pantallas pequeñas, cada elemento ocupa el 100% */
+  }
+}
+
+
 
 /* Espaciado y estilo de fondo con imágenes */
 .parallax {
   background-size: cover;
   background-attachment: fixed;
-  height: 400px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-size: 2em;
 }
 .parallax-bg1 {
-  background-image: url('../img/picture1.jpg');
+  background-image: url('../img/nature-wing-sky-sport-air-adventure-559488-pxhere.com.jpg');
 }
 
 .parallax-bg2 {
-  background-image: url('../img/picture2.jpg');
+  background-image: url('../img/man-landscape-sea-tree-nature-rock-834525-pxhere.com.jpg');
 }
 
 .parallax-bg3 {
-  background-image: url('../img/picture3.jpg');
+  background-image: url('../img/nature-grass-girl-woman-meadow-sunlight-1235940-pxhere.com.jpg');
 }
 
 @media (max-width: 992px) {
@@ -208,10 +274,50 @@ h1.brand a img {
 }
 
 /* Estilos de Secciones */
-.section {
-  padding: 60px 0;
+
+.section-inicio {
+  padding: 40px 0;
+  background-color: #E0F7FA ;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-bienvenida {
+  padding: 40px 0;
+  background-color: #FFF9C4 ;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-menu {
+  padding: 10px 0;
   background-color: #f0f0f0;
   border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-sobremi {
+  padding: 40px 0;
+  background-color: #B2EBF2 ;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.section-servicios {
+  padding: 40px 0;
+  background-color: #FFEBEE ;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-contacto {
+  padding: 40px 0;
+  background-color: #E1BEE7 ;
+  border: 2px solid #f1a6a6;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -269,32 +375,29 @@ h1.brand a img {
   }
 }
 
-
-/* Formulario de Contacto */
-#contact-form {
-  width: 100%;
-}
-
-#contact-form input,
-#contact-form textarea {
-  width: 100%;
-  padding: 11px 15px;
-  background: #f2f2f2;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-}
-
-#contact-form button {
-  background-color: #ffb354;
-  color: white;
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffb354; /* Color del fondo del botón */
+  color: white; /* Color del texto del botón */
   border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
 }
 
-#contact-form button:hover {
-  background-color: #ff9c3b;
+.back-to-top:hover {
+  background-color: #ff9c3b; /* Color del fondo al pasar el mouse */
 }
+
 
 /* Footer */
 footer {
