@@ -204,7 +204,7 @@ h1.brand a img {
 
 .flex-item {
   flex: 1; /* Toma el mismo espacio disponible */
-  min-width: 250px; /* Ajusta según lo necesites */
+  min-width: 150px; /* Ajusta según lo necesites */
   margin: 10px; /* Espacio entre las divisiones */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
   padding: 20px; /* Espacio interno */
