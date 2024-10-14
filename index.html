@@ -128,7 +128,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>Hebe González &copy; 2024 | <a href="#politica">Política de Privacidad</a></p>
+            <p>Hebe González &copy; 2024 | <a href="../hebe/politica-cookies.html">Política de Privacidad</a></p>
         </div>
     </footer>
 
@@ -173,4 +173,24 @@
 </a>
 
 </body>
+<div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; background-color:#f1f1f1; padding:10px; text-align:center; z-index:1000;">
+    <p>Utilizamos cookies para mejorar su experiencia en nuestra web. Al continuar navegando, aceptas nuestra <a href="/politica-cookies" target="_blank">Política de Cookies</a>.</p>
+    <button id="accept-cookies">Aceptar</button>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Comprobar si las cookies han sido aceptadas
+        if (!localStorage.getItem("cookiesAccepted")) {
+            // Mostrar el banner
+            document.getElementById("cookie-banner").style.display = "block";
+        }
+    
+        // Aceptar cookies
+        document.getElementById("accept-cookies").onclick = function() {
+            localStorage.setItem("cookiesAccepted", "true");
+            document.getElementById("cookie-banner").style.display = "none";
+        };
+    });
+    </script>
 </html>

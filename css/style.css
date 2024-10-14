@@ -364,3 +364,18 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+
+#cookie-banner {
+  background-color: #702b2b;
+  border-top: 1px solid #ccc;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+#cookie-banner p {
+  margin: 0;
+  display: inline;
+}
+#cookie-banner button {
+  margin-left: 15px;
+  padding: 5px 10px;
+}
