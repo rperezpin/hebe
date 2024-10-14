@@ -9,17 +9,15 @@ html {
 }
 
 body {
-  background-color: #E8F0F2 ;
+  background-color: #fffbf5; /* Color de fondo */
   font: 13px Tahoma, Arial, Helvetica, sans-serif;
   color: #a8a2a2;
   margin: 0;
   line-height: 20px;
 }
+
 main {
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 5%;  
-  padding-right: 5%;
+  padding: 30px 5%; /* Ajustado para más cercanía */
 }
 
 a {
@@ -45,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   font-size: 32px;
-  margin-bottom: 27px;
+  margin-bottom: 20px; /* Ajustado */
 }
 h3 {
   font-size: 28px;
@@ -80,7 +78,7 @@ img {
 
 /* Estilos para Header y Navegación */
 header {
-  padding: 84px 0;
+  padding: 60px 0; /* Ajustado */
   text-align: center;
 }
 
@@ -88,73 +86,57 @@ h1.brand a img {
   width: 70%;
 }
 
+/* Estilos para el Menú */
 .navbar {
-  overflow: visible;
-  margin-bottom: 20px;
-}
-.navbar .nav > li {
-  float: center;
-}
-.navbar .nav > li > a {
-  float: none;
-  padding: 10px 15px 10px;
-  color: #777777;
-  text-decoration: none;
-  text-shadow: 0 1px 0 #ffffff;
-}
-.navbar .brand {
-  float: flex;
-  display: block;
-  padding: 10px 20px 10px;
-  font-size: 20px;
-  font-weight: 200;
-  color: #777777;
-  text-shadow: 0 1px 0 #ffffff;
-}
-
-.navbar_ .nav-collapse_ .nav li {
-  position: relative;
-  display: inline-block;
-  padding: 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.nav-collapse_ .nav li a {
-  color: #979797;
-  font-size: 16px;
-  letter-spacing: 2px;
-  transition: color 0.35s ease;
-}
-.nav-collapse_ .nav li a:hover {
-  color: #262626;
-}
-
-.navbar-inner {
-  display: flex;
-  justify-content: center;
-  background: none;
-  border: none;
-  box-shadow: none;
+  display: flex; /* Usar flexbox para el menú */
+  justify-content: space-around; /* Distribuir uniformemente los elementos */
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten a la siguiente línea */
+  background-color: #fffbf5; /* Color de fondo */
+  padding: 10px 0; /* Espacio alrededor del menú */
+  border-radius: 10px; /* Bordes redondeados */
 }
 
 .navbar .nav {
-  position: relative;
-  left: 0;
-  display: block;
-  float: left;
-  margin: 0 0 0 0;
+  display: flex; /* Usar flexbox para la lista de navegación */
+  list-style: none; /* Quitar puntos de la lista */
+  padding: 0; /* Quitar padding */
+  margin: 0; /* Quitar margin */
+  width: 100%; /* Hacer que la lista ocupe todo el ancho */
+  justify-content: space-between; /* Distribuir los elementos con espacio entre ellos */
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten a la siguiente línea */
 }
-.nav a {
-  color: #5b5b5b;
-  text-decoration: none;
+
+.navbar .nav > li {
+  flex: 1 1 150px; /* Cada elemento del menú puede crecer y ocupar un mínimo de 150px */
+  text-align: center; /* Centrar el texto */
+  margin: 5px; /* Espacio entre los elementos del menú */
 }
-.nav a:hover {
-  color: #ffb354;
+
+.navbar .nav > li > a {
+  font-family: 'Georgia', serif;
+  display: block; /* Hacer que todo el área del enlace sea clickeable */
+  padding: 10px 15px; /* Espacio interno */
+  color: #292929; /* Color del texto */
+  text-decoration: none; /* Sin subrayado */
+  border: 2px solid #b5b677; /* Borde del enlace */
+  border-radius: 10px; /* Bordes redondeados */
+  transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
 }
-.nav > li > a {
-  display: block;
+
+.navbar .nav > li > a:hover {
+  background-color: #b5b677; /* Color de fondo al pasar el mouse */
+  color: #fff; /* Color del texto al pasar el mouse */
 }
+
+@media (max-width: 600px) {
+  .navbar .nav > li {
+    flex: 1 1 auto; /* Permitir que cada elemento del menú ocupe el espacio disponible */
+  }
+}
+
+
+
+
 /* Efectos de Imagen */
 .img-hover img {
   transition: opacity 0.5s ease;
@@ -164,12 +146,14 @@ h1.brand a img {
 }
 .img-sobremi {
   max-width: 100%;
-  width: 200px; /* Cambia este valor según necesites */
-  height: auto; /* Mantiene la proporción de la imagen */
-  display: block; /* Asegura que el espacio extra sea eliminado */
-  margin: 0 auto; /* Centra la imagen */
+  width: 200px; /* Puedes ajustar el tamaño según necesites */
+  height: 200px; /* Igual que el ancho para mantener la proporción */
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%; /* Esto hace que la imagen sea circular */
+  object-fit: cover; /* Asegura que la imagen cubra el círculo sin deformarse */
+  border: 2px solid #b5b677; /* Color del borde */
 }
-
 
 /* Sección de Cuadrícula */
 .grid-container {
@@ -190,59 +174,57 @@ h1.brand a img {
 }
 
 .justified-text {
-  text-align: justify; /* Justifica el texto */
+  text-align: justify;
   margin: 0 0 20px;
-  padding: 0 10px; /* Añade espacio entre párrafos */
+  padding: 0 10px;
 }
 
 .flex-container {
   display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
-  justify-content: space-between; /* Espaciado entre los elementos */
-  margin-top: 20px; /* Espacio superior */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .flex-item {
-  flex: 1; /* Toma el mismo espacio disponible */
-  min-width: 150px; /* Ajusta según lo necesites */
-  margin: 10px; /* Espacio entre las divisiones */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
-  padding: 20px; /* Espacio interno */
-  border-radius: 10px; /* Esquinas redondeadas */
-  text-align: center; /* Centra el texto */
-  background-color: #f9f9f9; /* Fondo suave */
-  transition: transform 0.3s; /* Efecto al pasar el mouse */
+  flex: 1;
+  min-width: 150px;
+  margin: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+  transition: transform 0.3s;
+  border: 2px solid #b5b677; /* Color del borde */
 }
 
 .flex-item:hover {
-  transform: translateY(-5px); /* Levanta la caja al pasar el mouse */
+  transform: translateY(-5px);
 }
 
 .flex-item i {
-  font-size: 2em; /* Tamaño del icono */
-  color: #007bff; /* Color del icono */
-  margin-bottom: 10px; /* Espacio debajo del icono */
+  font-size: 2em;
+  color: #007bff;
+  margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 1.5em; /* Tamaño de los encabezados */
-  margin: 10px 0; /* Espacio superior e inferior */
+  font-size: 1.5em;
+  margin: 10px 0;
 }
 
 p {
-  font-size: 1.1em; /* Tamaño del texto */
-  color: #555; /* Color del texto */
+  font-size: 1.1em;
+  color: #555;
 }
 
 @media (max-width: 600px) {
   .flex-item {
-      flex: 100%; /* En pantallas pequeñas, cada elemento ocupa el 100% */
+      flex: 100%;
   }
 }
 
-
-
-/* Espaciado y estilo de fondo con imágenes */
 .parallax {
   background-size: cover;
   background-attachment: fixed;
@@ -255,73 +237,43 @@ p {
   font-size: 2em;
 }
 .parallax-bg1 {
-  background-image: url('../img/nature-wing-sky-sport-air-adventure-559488-pxhere.com.jpg');
-}
-
-.parallax-bg2 {
-  background-image: url('../img/man-landscape-sea-tree-nature-rock-834525-pxhere.com.jpg');
-}
-
-.parallax-bg3 {
-  background-image: url('../img/nature-grass-girl-woman-meadow-sunlight-1235940-pxhere.com.jpg');
-}
-
-@media (max-width: 992px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-  
+  background-image: url('../img/Diseño sin título.gif');
 }
 
 /* Estilos de Secciones */
-
+.section-inicio,
+.section-bienvenida,
+.section-sobremi,
+.section-servicios,
+.section-contacto {
+  padding: 20px 0; /* Ajustado para mayor cercanía */
+  background-color: #dae2b6; /* Color de fondo nuevo */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-left: 2px solid #b5b677; /* Borde izquierdo */
+  border-right: 2px solid #b5b677; /* Borde derecho */
+}
 .section-inicio {
-  padding: 40px 0;
-  background-color: #E0F7FA ;
-  border: 2px solid #ccc;
-  border-radius: 10px;
+  padding: 20px 0; /* Ajustado para mayor cercanía */
+  background-color: #dae2b6; /* Color de fondo nuevo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-top: 2px solid #b5b677; /* Borde derecho */
 }
-
-.section-bienvenida {
-  padding: 40px 0;
-  background-color: #FFF9C4 ;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 .section-menu {
-  padding: 10px 0;
-  background-color: #f0f0f0;
-  border: 2px solid #ccc;
-  border-radius: 10px;
+  padding: 20px 0; /* Ajustado para mayor cercanía */
+  background-color: #fffbf5; /* Color de fondo nuevo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.section-sobremi {
-  padding: 40px 0;
-  background-color: #B2EBF2 ;
-  border: 2px solid #ccc;
-  border-radius: 10px;
+.section-bienvenida {
+  padding: 20px 0; /* Ajustado para mayor cercanía */
+  background-color: #fffbf5; /* Color de fondo nuevo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-top: 2px solid #b5b677; /* Borde derecho */
 }
 .section-servicios {
-  padding: 40px 0;
-  background-color: #FFEBEE ;
-  border: 2px solid #ccc;
-  border-radius: 10px;
+  padding: 20px 0; /* Ajustado para mayor cercanía */
+  background-color: #fffbf5; /* Color de fondo nuevo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.section-contacto {
-  padding: 40px 0;
-  background-color: #E1BEE7 ;
-  border: 2px solid #f1a6a6;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 .section.bg-light {
   background-color: #f8f9fa;
 }
@@ -333,8 +285,7 @@ p {
 }
 
 .terapia-boxes .box {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: #dae2b6; /* Color de fondo nuevo */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -343,6 +294,7 @@ p {
 .terapia-boxes .box:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
 /* Estilo para los detalles (summary) */
 .terapia-boxes details summary {
   font-size: 1.2em;
@@ -379,8 +331,8 @@ p {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #ffb354; /* Color del fondo del botón */
-  color: white; /* Color del texto del botón */
+  background-color: #ffb354;
+  color: white;
   border: none;
   border-radius: 50%;
   width: 50px;
@@ -395,9 +347,8 @@ p {
 }
 
 .back-to-top:hover {
-  background-color: #ff9c3b; /* Color del fondo al pasar el mouse */
+  background-color: #ff9c3b;
 }
-
 
 /* Footer */
 footer {
