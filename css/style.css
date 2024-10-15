@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 38px;
   margin-bottom: 20px; /* Ajustado */
 }
 h3 {
@@ -114,6 +114,7 @@ h1.brand a img {
 
 .navbar .nav > li > a {
   font-family: 'Georgia', serif;
+  font-size: 20px;
   display: block; /* Hacer que todo el área del enlace sea clickeable */
   padding: 10px 15px; /* Espacio interno */
   color: #292929; /* Color del texto */
@@ -146,13 +147,9 @@ h1.brand a img {
 }
 .img-sobremi {
   max-width: 100%;
-  width: 200px; /* Puedes ajustar el tamaño según necesites */
-  height: 200px; /* Igual que el ancho para mantener la proporción */
+  max-height: 300px; /* Igual que el ancho para mantener la proporción */
   display: block;
   margin: 0 auto;
-  border-radius: 50%; /* Esto hace que la imagen sea circular */
-  object-fit: cover; /* Asegura que la imagen cubra el círculo sin deformarse */
-  border: 2px solid #b5b677; /* Color del borde */
 }
 
 /* Sección de Cuadrícula */
@@ -175,8 +172,10 @@ h1.brand a img {
 
 .justified-text {
   text-align: justify;
+  font-size: 18px;
   margin: 0 0 20px;
   padding: 0 10px;
+  line-height: 1.6;
 }
 
 .flex-container {
@@ -228,7 +227,7 @@ p {
 .parallax {
   background-size: cover;
   background-attachment: fixed;
-  height: 200px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,28 +248,31 @@ p {
   padding: 20px 0; /* Ajustado para mayor cercanía */
   background-color: #dae2b6; /* Color de fondo nuevo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border-left: 2px solid #b5b677; /* Borde izquierdo */
-  border-right: 2px solid #b5b677; /* Borde derecho */
+  padding-bottom: 50px;
+  /*border-left: 2px solid #b5b677; */
+  /*border-right: 2px solid #b5b677;  Borde derecho */
 }
 .section-inicio {
-  padding: 20px 0; /* Ajustado para mayor cercanía */
+  padding: 20px 0; /* Ajustado para mayor cercanía */  
   background-color: #dae2b6; /* Color de fondo nuevo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border-top: 2px solid #b5b677; /* Borde derecho */
 }
 .section-menu {
   padding: 20px 0; /* Ajustado para mayor cercanía */
   background-color: #fffbf5; /* Color de fondo nuevo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid #b5b677; /* Borde derecho */
 }
 .section-bienvenida {
   padding: 20px 0; /* Ajustado para mayor cercanía */
+  padding-bottom: 50px;
   background-color: #fffbf5; /* Color de fondo nuevo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   border-top: 2px solid #b5b677; /* Borde derecho */
 }
 .section-servicios {
   padding: 20px 0; /* Ajustado para mayor cercanía */
+  padding-bottom: 50px;
   background-color: #fffbf5; /* Color de fondo nuevo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
