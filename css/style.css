@@ -9,9 +9,8 @@ html {
 }
 
 body {
-  background-color: #fffbf5; /* Color de fondo */
+  background-color: #DCE1DA; /* Color de fondo */
   font: 13px Tahoma, Arial, Helvetica, sans-serif;
-  color: #a8a2a2;
   margin: 0;
   line-height: 20px;
 }
@@ -35,7 +34,7 @@ a[href^="tel:"] {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
-  font-family: 'Times New Roman', serif;
+  font-family: 'bernadette rough';
   font-weight: bold;
   line-height: 1.3;
   color: #3f3f3f;
@@ -52,9 +51,7 @@ h4 {
   font-size: 22px;
 }
 
-p {
-  margin: 0 0 10px;
-}
+
 strong {
   font-weight: bold;
 }
@@ -119,13 +116,13 @@ h1.brand a img {
   padding: 10px 15px; /* Espacio interno */
   color: #292929; /* Color del texto */
   text-decoration: none; /* Sin subrayado */
-  border: 2px solid #b5b677; /* Borde del enlace */
+  border: 2px solid #f4978e; /* Borde del enlace */
   border-radius: 10px; /* Bordes redondeados */
   transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
 }
 
 .navbar .nav > li > a:hover {
-  background-color: #b5b677; /* Color de fondo al pasar el mouse */
+  background-color: #f4978e; /* Color de fondo al pasar el mouse */
   color: #fff; /* Color del texto al pasar el mouse */
 }
 
@@ -134,8 +131,6 @@ h1.brand a img {
     flex: 1 1 auto; /* Permitir que cada elemento del menú ocupe el espacio disponible */
   }
 }
-
-
 
 
 /* Efectos de Imagen */
@@ -157,6 +152,22 @@ h1.brand a img {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Una sola columna */
+  }
+
+  .grid-item-img {
+    padding-bottom: 30px;
+    order: 1; /* Mover el texto debajo de la imagen */
+  }
+
+  .grid-item-txt {
+    order: 2; /* Mover el texto debajo de la imagen */
+  }
 }
 
 /* Estilos animados al hacer scroll */
@@ -195,7 +206,7 @@ h1.brand a img {
   text-align: center;
   background-color: #f9f9f9;
   transition: transform 0.3s;
-  border: 2px solid #b5b677; /* Color del borde */
+  border: 2px solid #f4978e; /* Color del borde */
 }
 
 .flex-item:hover {
@@ -204,17 +215,17 @@ h1.brand a img {
 
 .flex-item i {
   font-size: 2em;
-  color: #007bff;
+  color: #f08080;
   margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 22px;
   margin: 10px 0;
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 16px;
   color: #555;
 }
 
@@ -246,29 +257,29 @@ p {
 .section-servicios,
 .section-contacto {
   padding: 20px 0; /* Ajustado para mayor cercanía */
-  background-color: #dae2b6; /* Color de fondo nuevo */
+  background-color: #ECB7B3; /* Color de fondo nuevo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   padding-bottom: 50px;
-  /*border-left: 2px solid #b5b677; */
-  /*border-right: 2px solid #b5b677;  Borde derecho */
+  /*border-left: 2px solid #f4978e; */
+  /*border-right: 2px solid #f4978e;  Borde derecho */
 }
 .section-inicio {
   padding: 20px 0; /* Ajustado para mayor cercanía */  
-  background-color: #dae2b6; /* Color de fondo nuevo */
+  background-color: #ECB7B3; /* Color de fondo nuevo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 .section-menu {
   padding: 20px 0; /* Ajustado para mayor cercanía */
   background-color: #fffbf5; /* Color de fondo nuevo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border-bottom: 2px solid #b5b677; /* Borde derecho */
+  border-bottom: 2px solid #f4978e; /* Borde derecho */
 }
 .section-bienvenida {
   padding: 20px 0; /* Ajustado para mayor cercanía */
   padding-bottom: 50px;
-  background-color: #fffbf5; /* Color de fondo nuevo */
+  background-color: #FBE0D9; /* Color de fondo nuevo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border-top: 2px solid #b5b677; /* Borde derecho */
+  border-top: 2px solid #f4978e; /* Borde derecho */
 }
 .section-servicios {
   padding: 20px 0; /* Ajustado para mayor cercanía */
@@ -278,55 +289,6 @@ p {
 }
 .section.bg-light {
   background-color: #f8f9fa;
-}
-
-.terapia-boxes {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.terapia-boxes .box {
-  background-color: #dae2b6; /* Color de fondo nuevo */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  transition: box-shadow 0.3s ease;
-}
-.terapia-boxes .box:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Estilo para los detalles (summary) */
-.terapia-boxes details summary {
-  font-size: 1.2em;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 10px 0;
-}
-
-/* Estilo para los párrafos dentro de los detalles */
-.terapia-boxes details p {
-  margin-top: 10px;
-  font-size: 1em;
-}
-
-/* Ajuste para evitar borde en el summary */
-.terapia-boxes details[open] summary {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 10px;
-}
-
-@media (max-width: 992px) {
-  .terapia-boxes {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 576px) {
-  .terapia-boxes {
-    grid-template-columns: 1fr;
-  }
 }
 
 .back-to-top {
@@ -354,14 +316,14 @@ p {
 
 /* Footer */
 footer {
-  background-color: #343a40;
+  background-color: #8E929B ;
   color: #fff;
   text-align: center;
   padding: 20px;
 }
 
 footer a {
-  color: #ffb354;
+  color: #555;
 }
 footer a:hover {
   text-decoration: underline;

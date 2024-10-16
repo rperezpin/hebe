@@ -1,0 +1,7 @@
+Paleta colores
+#FBE0D9
+#ECB7B3
+#8E929B
+#A4B8AC
+#DCE1DA
+#f08080 // #f4978e // #f8ad9d // #fbc4ab // #ffdab9
