@@ -266,7 +266,7 @@ p {
 
 /* Estilos de Secciones */
 .section-contacto {
-  background-image: url('/img/5777487.jpg');
+  background-image: url('../img/5777487.jpg');
   background-size: cover; /* Ajusta la imagen para cubrir todo el área */
   background-position: center; /* Centra la imagen */
   padding: 20px 0; /* Ajustado para mayor cercanía */
@@ -278,7 +278,7 @@ p {
   /*border-right: 2px solid #f4978e;  Borde derecho */
 }
 .section-inicio {
-  background-image: url('/img/5793628.jpg');
+  background-image: url('../img/5793628.jpg');
   background-size: cover; /* Ajusta la imagen para cubrir todo el área */
   background-position: top center; /* Centra la imagen */
   padding: 20px 0; /* Ajustado para mayor cercanía */  
@@ -293,7 +293,7 @@ p {
   border-bottom: 2px solid #f4978e; /* Borde derecho */
 }
 .section-bienvenida {
-  background-image: url('/img/5708775.jpg');
+  background-image: url('../img/5708775.jpg');
   background-size: cover; /* Ajusta la imagen para cubrir todo el área */
   background-position: top center; /* Centra la imagen */
   padding: 20px 0; /* Ajustado para mayor cercanía */
@@ -303,7 +303,7 @@ p {
   border-top: 2px solid #f4978e; /* Borde derecho */
 }
 .section-background {
-  background-image: url('/img/stylish-memphis-abstract-background-design.jpg');
+  background-image: url('../img/stylish-memphis-abstract-background-design.jpg');
   background-size: cover; /* Ajusta la imagen para cubrir todo el área */
   background-position: center; /* Centra la imagen */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
