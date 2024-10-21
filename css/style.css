@@ -1,6 +1,11 @@
 @import url(//fonts.googleapis.com/css?family=Cabin:400,600,700);
 
 /* Estilos Globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
@@ -238,7 +243,7 @@ p {
 .parallax {
   background-size: cover;
   background-attachment: fixed;
-  height: 300px;
+  min-height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -246,27 +251,40 @@ p {
   text-align: center;
   font-size: 2em;
 }
+
 .parallax-bg1 {
-  background-image: url('../img/Diseño sin título.gif');
+  max-height: 300px;
+  min-width: 100%;
+  overflow: hidden; /* Evita que el video se desborde */
+  background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+  background-position: center; /* Centra la imagen */
+}
+
+.parallax-bg2 {
+  background-image: url('../img/5696176.jpg');
 }
 
 /* Estilos de Secciones */
-.section-inicio,
-.section-bienvenida,
-.section-sobremi,
-.section-servicios,
 .section-contacto {
+  background-image: url('/img/5777487.jpg');
+  background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+  background-position: center; /* Centra la imagen */
   padding: 20px 0; /* Ajustado para mayor cercanía */
-  background-color: #ECB7B3; /* Color de fondo nuevo */
+  /*background-color: #ECB7B3; */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   padding-bottom: 50px;
+  min-height: 200px; /* Ajusta la altura total para ambas secciones */
   /*border-left: 2px solid #f4978e; */
   /*border-right: 2px solid #f4978e;  Borde derecho */
 }
 .section-inicio {
+  background-image: url('/img/5793628.jpg');
+  background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+  background-position: top center; /* Centra la imagen */
   padding: 20px 0; /* Ajustado para mayor cercanía */  
   background-color: #ECB7B3; /* Color de fondo nuevo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding-bottom: 50px;
 }
 .section-menu {
   padding: 20px 0; /* Ajustado para mayor cercanía */
@@ -275,17 +293,29 @@ p {
   border-bottom: 2px solid #f4978e; /* Borde derecho */
 }
 .section-bienvenida {
+  background-image: url('/img/5708775.jpg');
+  background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+  background-position: top center; /* Centra la imagen */
   padding: 20px 0; /* Ajustado para mayor cercanía */
   padding-bottom: 50px;
   background-color: #FBE0D9; /* Color de fondo nuevo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   border-top: 2px solid #f4978e; /* Borde derecho */
 }
+.section-background {
+  background-image: url('/img/stylish-memphis-abstract-background-design.jpg');
+  background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+  background-position: center; /* Centra la imagen */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  min-height: 800px; /* Ajusta la altura total para ambas secciones */
+}
+.section-sobremi,
 .section-servicios {
   padding: 20px 0; /* Ajustado para mayor cercanía */
   padding-bottom: 50px;
-  background-color: #fffbf5; /* Color de fondo nuevo */
+  /*background-color: #fffbf5; */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  min-height: 400px;
 }
 .section.bg-light {
   background-color: #f8f9fa;
@@ -344,7 +374,7 @@ footer a:hover {
 }
 
 .contact-item {
-  font-family: "Apple Chancery",  Cursive;
+  font-family: "Apple Chancery", "Lucida Handwriting", "Brush Script MT", "Dancing Script", "Great Vibes", "Pacifico", cursive;
   font-size: 16px; /*margen horizontal entre los items (20px en total entre dos items) */
   display: flex; /* Usar flexbox para alinear el icono y el texto */
   align-items: center;
