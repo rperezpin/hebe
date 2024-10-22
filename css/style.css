@@ -242,27 +242,44 @@ p {
 
 .parallax {
   background-size: cover;
-  background-attachment: fixed;
-  min-height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-size: 2em;
+  background-attachment: fixed; /* Mantiene el fondo fijo */
+  min-height: 300px; /* Ajusta según tus necesidades */
+  position: relative; /* Para superponer contenido */
+  overflow: hidden;
 }
 
 .parallax-bg1 {
-  max-height: 300px;
-  min-width: 100%;
-  overflow: hidden; /* Evita que el video se desborde */
-  background-size: cover; /* Ajusta la imagen para cubrir todo el área */
-  background-position: center; /* Centra la imagen */
+  background-image: url('../img/your-image.jpg'); /* Cambia a tu imagen */
 }
 
 .parallax-bg2 {
-  background-image: url('../img/5696176.jpg');
+  background-image: url('../img/5696176.jpg'); /* Cambia a tu imagen */
 }
+
+/* Estilo para el video */
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1; /* Envía el video detrás */
+  transform: translate(-50%, -50%);
+}
+
+/* Oculta el parallax en móviles para evitar problemas */
+@media (max-width: 768px) {
+  .parallax {
+      background-attachment: scroll; /* Cambia a scroll en móviles */
+      position: relative; /* Asegúrate de que el contenido se superponga */
+  }
+  .parallax-bg2 {
+    background-attachment: fixed; /* Cambia a scroll en móviles */
+}
+}
+
 
 /* Estilos de Secciones */
 .section-contacto {
