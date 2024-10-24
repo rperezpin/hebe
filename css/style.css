@@ -21,8 +21,54 @@ body {
 }
 
 main {
-  padding: 30px 5%; /* Ajustado para más cercanía */
+  position: relative; /* Asegúrate de que el main tenga un contexto de posición */
+  padding: 30px 5%; /* Ajuste del padding para dejar espacio a los lados */
+  z-index: 1; /* Para que el contenido esté por encima del fondo */
+  overflow: hidden; /* Para ocultar el desbordamiento del fondo */
 }
+
+.background-content {
+  position: fixed; /* Fijo para el efecto de parallax */
+  padding: 30px;
+  z-index: -1; /* Asegúrate de que el fondo esté detrás del contenido */
+  left: 50%;
+  transform: translateX(-50%); /* Centrar el fondo */
+  width: 90%; /* Deja un 5% a cada lado */
+  height: 90%; /* Ocupa toda la altura menos el margen inferior */
+}
+
+.background-content-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%; /* Ocupa todo el ancho */
+  height: 100%; /* Mantener el 100% de la altura */
+  transform: translate(-50%, -50%);
+}
+
+.background-content .background-img {
+  position: relative; /* Cambiado a absolute para ocupar todo el fondo */
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupa todo el ancho */
+  height: 100%; /* Ocupa toda la altura */
+  background-image: url('../img/5696176.jpg'); /* Cambia a tu imagen */
+  background-size: auto; /* Cambiado a auto para mantener el tamaño original */
+  background-repeat: repeat; /* Hace que la imagen se repita */
+  background-attachment: fixed; /* Fijo para el efecto parallax */
+  background-position: center; /* Asegura que el fondo esté centrado */
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ajustar para ocupar todo el ancho */
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* Opcional: un overlay para ajustar el contraste */
+}
+
 
 a {
   color: #292929;
@@ -280,7 +326,9 @@ p {
 }
 }
 
-
+.section-empty {
+  min-height: 300px;
+}
 /* Estilos de Secciones */
 .section-contacto {
   background-image: url('../img/5777487.jpg');
