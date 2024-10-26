@@ -134,13 +134,14 @@ header {
 
 .container-bg-inicio {
   background-color: #ffffff; /* Color de fondo */
+  max-height: 300px;
   padding: 10px 40px; /* Espacio alrededor del menú */
   border-radius: 10px; /* Bordes redondeados */
 }
 
 h1.brand a img {
   width: auto;
-  max-height: 400px;
+  max-height: 200px;
 }
 
 /* Estilos para el Menú */
