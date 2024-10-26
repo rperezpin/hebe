@@ -366,7 +366,7 @@ p {
   background-size: cover; /* Ajusta la imagen para cubrir todo el área */
   background-position: top center; /* Centra la imagen */
   padding: 20px 0; /* Ajustado para mayor cercanía */  
-  background-color: #d9d9d9; /* Color de fondo nuevo */
+  background-image: url('../img/pexels-stockphotoartist-1198976.jpg'); /* Cambia a tu imagen */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   padding-bottom: 50px;
 }
