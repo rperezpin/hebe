@@ -370,12 +370,11 @@ p {
   border-bottom: 2px solid #f4978e; /* Borde derecho */
 }
 .section-bienvenida {
-  background-image: url('../img/5708775.jpg');
+  background-color: #dae2b6;
   background-size: cover; /* Ajusta la imagen para cubrir todo el área */
   background-position: top center; /* Centra la imagen */
   padding: 20px 0; /* Ajustado para mayor cercanía */
   padding-bottom: 50px;
-  background-color: #FBE0D9; /* Color de fondo nuevo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   border-top: 2px solid #f4978e; /* Borde derecho */
 }
