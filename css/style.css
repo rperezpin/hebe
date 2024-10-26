@@ -53,9 +53,9 @@ main {
   left: 0;
   width: 100%; /* Ocupa todo el ancho */
   height: 100%; /* Ocupa toda la altura */
-  background-image: url('../img/5696176.jpg'); /* Cambia a tu imagen */
-  background-size: auto; /* Cambiado a auto para mantener el tamaño original */
-  background-repeat: repeat; /* Hace que la imagen se repita */
+  background-image: url('../img/pexels-stockphotoartist-1198976.jpg'); /* Cambia a tu imagen */
+  background-size: cover; /* Ajustado para cubrir todo el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-attachment: fixed; /* Fijo para el efecto parallax */
   background-position: center; /* Asegura que el fondo esté centrado */
 }
@@ -304,7 +304,8 @@ p {
 .bg-gif {
   visibility: visible;
   position: absolute;
-  top: 0;
+  
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
