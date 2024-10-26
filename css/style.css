@@ -139,7 +139,7 @@ h1.brand a img {
   display: flex; /* Usar flexbox para el menú */
   justify-content: space-around; /* Distribuir uniformemente los elementos */
   flex-wrap: wrap; /* Permitir que los elementos se ajusten a la siguiente línea */
-  background-color: #fffbf5; /* Color de fondo */
+  background-color: #ffffff; /* Color de fondo */
   padding: 10px 0; /* Espacio alrededor del menú */
   border-radius: 10px; /* Bordes redondeados */
 }
@@ -167,13 +167,13 @@ h1.brand a img {
   padding: 10px 15px; /* Espacio interno */
   color: #292929; /* Color del texto */
   text-decoration: none; /* Sin subrayado */
-  border: 2px solid #f4978e; /* Borde del enlace */
+  border: 2px solid #868C56; /* Borde del enlace */
   border-radius: 10px; /* Bordes redondeados */
   transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
 }
 
 .navbar .nav > li > a:hover {
-  background-color: #f4978e; /* Color de fondo al pasar el mouse */
+  background-color: #868C56; /* Color de fondo al pasar el mouse */
   color: #fff; /* Color del texto al pasar el mouse */
 }
 
@@ -257,7 +257,7 @@ h1.brand a img {
   text-align: center;
   background-color: #f9f9f9;
   transition: transform 0.3s;
-  border: 2px solid #f4978e; /* Color del borde */
+  border: 2px solid #868C56; /* Color del borde */
 }
 
 .flex-item:hover {
@@ -266,7 +266,7 @@ h1.brand a img {
 
 .flex-item i {
   font-size: 2em;
-  color: #f08080;
+  color: #868C56;
   margin-bottom: 10px;
 }
 
@@ -343,11 +343,10 @@ p {
 }
 /* Estilos de Secciones */
 .section-contacto {
-  background-image: url('../img/5777487.jpg');
   background-size: cover; /* Ajusta la imagen para cubrir todo el área */
   background-position: center; /* Centra la imagen */
   padding: 20px 0; /* Ajustado para mayor cercanía */
-  /*background-color: #ECB7B3; */
+  background-color: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   padding-bottom: 50px;
   min-height: 200px; /* Ajusta la altura total para ambas secciones */
@@ -355,41 +354,40 @@ p {
   /*border-right: 2px solid #f4978e;  Borde derecho */
 }
 .section-inicio {
-  background-image: url('../img/5793628.jpg');
   background-size: cover; /* Ajusta la imagen para cubrir todo el área */
   background-position: top center; /* Centra la imagen */
   padding: 20px 0; /* Ajustado para mayor cercanía */  
-  background-color: #ECB7B3; /* Color de fondo nuevo */
+  background-color: #d9d9d9; /* Color de fondo nuevo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   padding-bottom: 50px;
 }
 .section-menu {
   padding: 20px 0; /* Ajustado para mayor cercanía */
-  background-color: #fffbf5; /* Color de fondo nuevo */
+  background-color: #ffffff; /* Color de fondo nuevo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border-bottom: 2px solid #f4978e; /* Borde derecho */
+  border-bottom: 2px solid #d9d9d9; /* Borde derecho */
 }
 .section-bienvenida {
-  background-color: #dae2b6;
+  background-color: #ffffff;
   background-size: cover; /* Ajusta la imagen para cubrir todo el área */
   background-position: top center; /* Centra la imagen */
   padding: 20px 0; /* Ajustado para mayor cercanía */
   padding-bottom: 50px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border-top: 2px solid #f4978e; /* Borde derecho */
+  border-top: 2px solid #d9d9d9; /* Borde derecho */
 }
-.section-background {
-  background-image: url('../img/stylish-memphis-abstract-background-design.jpg');
-  background-size: cover; /* Ajusta la imagen para cubrir todo el área */
-  background-position: center; /* Centra la imagen */
+
+.section-sobremi {
+  padding: 20px 0; /* Ajustado para mayor cercanía */
+  padding-bottom: 50px;
+  background-color: #f3f4e7;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  min-height: 800px; /* Ajusta la altura total para ambas secciones */
+  min-height: 400px;
 }
-.section-sobremi,
 .section-servicios {
   padding: 20px 0; /* Ajustado para mayor cercanía */
   padding-bottom: 50px;
-  /*background-color: #fffbf5; */
+  background-color: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   min-height: 400px;
 }
