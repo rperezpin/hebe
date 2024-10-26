@@ -132,8 +132,14 @@ header {
   text-align: center;
 }
 
+.container-bg-inicio {
+  background-color: #ffffff; /* Color de fondo */
+  padding: 10px 40px; /* Espacio alrededor del menú */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
 h1.brand a img {
-  width: 100%;
+  width: auto;
   max-height: 400px;
 }
 
