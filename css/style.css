@@ -405,6 +405,15 @@ p {
   background-color: #f8f9fa;
 }
 
+.section-texto {
+  padding: 20px;
+  background-color: #ffffff; /* Color de fondo nuevo */
+}
+
+.section-texto .justified-text {
+  font-size: 14px;
+}
+
 .back-to-top {
   position: fixed;
   bottom: 20px;
