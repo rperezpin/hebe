@@ -24,10 +24,10 @@ body {
 }
 
 main {
-  position: relative; /* Asegúrate de que el main tenga un contexto de posición */
-  padding: 30px 5%; /* Ajuste del padding para dejar espacio a los lados */
-  z-index: 1; /* Para que el contenido esté por encima del fondo */
-  overflow: hidden; /* Para ocultar el desbordamiento del fondo */
+  position: relative; 
+  /*padding: 30px 5%; */
+  z-index: 1; 
+  overflow: hidden;
 }
 
 .background-content {
