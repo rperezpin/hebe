@@ -6,16 +6,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hebe González, psicóloga sanitaria especializada en terapia individual y online, enfocada en la Terapia Gestalt. Descubre cómo te puedo ayudar a mejorar tu bienestar emocional.">
-    <meta name="keywords" content="Psicología, Terapia Gestalt, Psicóloga Sanitaria, Terapia individual, Terapia online, Ansiedad, Depresión">
+    <meta name="keywords" content="psicóloga Granada, psicología sanitaria, terapia individual, terapia Gestalt, terapia online, psicóloga ansiedad, psicóloga depresión, terapia presencial, ansiedad, depresión, terapia para adultos, Psicólogo bien valorado, Psicólogo mejor valorado" />
     <meta name="author" content="Hebe González">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Hebe González, psicóloga sanitaria en Granada y especializada en Terapia Gestalt. Ofrezco terapia individual tanto presencial como online para ayudarte a mejorar tu bienestar emocional." />
+    <meta property="og:title" content="Psicóloga Sanitaria en Granada | Terapia Gestalt - Hebe González" />
+    <meta property="og:description" content="Soy Hebe González, psicóloga sanitaria en Granada especializada en Terapia Gestalt. Ofrezco terapia online y presencial para adultos que desean mejorar su bienestar emocional." />
+    <meta property="og:image" content="https://www.tusitioweb.com/img/logo.jpeg" />
+    <meta property="og:url" content="https://www.tusitioweb.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Hebe González - Psicóloga en Granada" />
 
-    <title>Hebe González - Psicóloga Sanitaria</title>
-    
-    <!--CSS-->
+    <title>Hebe González - Psicólogo en Granada</title>
+    <title>Psicóloga Sanitaria en Granada | Terapia Gestalt Online y Presencial - Hebe González</title>
+   
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/schema.js" defer></script>
 
 </head>
 <body>    
@@ -237,68 +247,11 @@
     
 
     <!-- Sección Contacto -->
-    <section class="section-contacto fade-in" id="contacto">
-        <div class="container">
-            <h2>Contacto</h2>
-            <p class="contact-text">Puedes ponerte en contacto conmigo para cualquier duda o consulta que te surja a través de los siguientes medios.</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i> <!-- Icono de teléfono -->
-                    <span>+34 123 456 789</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i> <!-- Icono de correo -->
-                    <span>email@example.com</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p class="footer-text">Hebe González &copy; 2024 | 
-                <a href="politica-cookies.html">Política de cookies</a> | 
-                <a href="aviso-legal.html">Aviso legal</a> | 
-                <a href="politica-privacidad.html">Política de Privacidad</a>
-            </p>
-            
-        </div>
-    </footer>
-<!-- JS para navegación suave y animaciones -->
-<script>
-
-    // Scroll suave en navegación
-    document.querySelectorAll('.nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-
-    // Animaciones al hacer scroll
-    const faders = document.querySelectorAll('.fade-in');
-    const appearOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
-    };
-    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) {
-                return;
-            } else {
-                entry.target.classList.add('visible');
-                appearOnScroll.unobserve(entry.target);
-            }
-        });
-    }, appearOptions);
     
-    faders.forEach(fader => {
-        appearOnScroll.observe(fader);
-    });
-</script>
+    <div id="footer-container"></div>
     
 </main>
 <!-- Botón de subir -->

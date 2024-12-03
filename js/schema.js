@@ -21,10 +21,3 @@ const schemaData = {
     ]
   };
   
-  // Crear y añadir el script de JSON-LD al head del HTML
-  const scriptTag = document.createElement('script');
-  scriptTag.type = 'application/ld+json';
-  scriptTag.innerHTML = JSON.stringify(schemaData);
-  
-  document.head.appendChild(scriptTag);
-  
