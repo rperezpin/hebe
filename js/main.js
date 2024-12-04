@@ -34,8 +34,28 @@ faders.forEach(fader => {
 });
 
 // Cargar el footer dinámicamente
-document.addEventListener("DOMContentLoaded", function () {   
-    fetch("footer.html")
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("include/menu.html")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Error al cargar el menu: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(data => {
+            const menuContainer = document.getElementById("menu-container");
+            if (menuContainer) {
+                menuContainer.innerHTML = data;
+
+                // Reaplicar animaciones tras cargar contenido dinámico
+                const dynamicFaders = menuContainer.querySelectorAll('.fade-in');
+                dynamicFaders.forEach(fader => appearOnScroll.observe(fader));
+            } else {
+                console.error("El contenedor del menu no existe en el DOM.");
+            }
+        })
+        .catch(error => console.error("Error al cargar el menu:", error));
+    fetch("include/footer.html")
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Error al cargar el footer: ${response.status}`);
